@@ -1,0 +1,44 @@
+.CardDetails {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row nowrap;
+	.imgg {
+		width: 80px;
+		height: 80px;
+		img {
+			// max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.det {
+		position: relative;
+		width: 70%;
+		margin-top: 11px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 1px;
+		align-self: flex-start;
+		flex-flow: column nowrap;
+		.name {
+			font-size: 20px;
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+		}
+		.city {
+			font-size: 10px;
+			font-weight: 400;
+			color: #555;
+			margin-left: 1px;
+		}
+	}
+}
+.bdg {
+	all: unset;
+	position: absolute;
+	left: 110%;
+	font-size: 10px;
+	padding: 1px 5px;
+	font-weight: 700;
+}

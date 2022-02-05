@@ -1,0 +1,36 @@
+.imgg {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 60%;
+	height: 90%;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+
+	img {
+		max-height: 100%;
+		transition: all 0.3s ease-in-out;
+	}
+}
+.card {
+	// background: rgb(0, 255, 255);
+	// background: linear-gradient(
+	// 	270deg,
+	// 	rgba(0, 255, 255, 0.335) 0%,
+	// 	rgba(0, 255, 255, 0) 40%
+	// );
+	// transition: all 0.5s ease-in;
+	&:hover {
+		// border-color: #000;
+		// background: linear-gradient(
+		// 	270deg,
+		// 	rgba(0, 255, 255, 0.383) 0%,
+		// 	rgba(0, 255, 255, 0) 60%
+		// );
+		.imgg {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
